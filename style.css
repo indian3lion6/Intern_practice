@@ -1,0 +1,153 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: green;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-container {
+  background-color: green;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: lightgreen;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.nav-links li a i {
+  margin-right: 8px;
+  color: green;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:hover i {
+  color: #b0ffb0;
+}
+
+/* Hero Section */
+.hero {
+  background: #121212;
+  color: green;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: green;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #d4ffd4;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: lightgreen;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background: #aaffaa;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .cta-btn {
+    font-size: 1em;
+    padding: 10px 25px;
+  }
+}
