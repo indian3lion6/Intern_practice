@@ -25,7 +25,7 @@ A simple RESTful API built with **Node.js** and **Express.js** to perform CRUD o
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/indian3lion6/Intern_practice/new/main/Task3.git
+git clone https://github.com/indian3lion6/Intern_practice/new/main/Task3
 cd books-api
 npm install
 node server.js
